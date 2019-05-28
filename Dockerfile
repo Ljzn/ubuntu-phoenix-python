@@ -58,4 +58,9 @@ ENV PYTHON_VERSION 3.6.2
 RUN asdf install python ${PYTHON_VERSION} \
  && asdf global python ${PYTHON_VERSION}
  
+# install tensorflow
 RUN pip install tensorflow
+
+# install phoenix
+ENV PHOENIX_VERSION 1.4.6
+RUN mix archive.install hex phx_new ${PHOENIX_VERSION}
