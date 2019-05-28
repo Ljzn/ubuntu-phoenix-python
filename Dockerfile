@@ -36,12 +36,12 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 # install erlang
-ENV ERLANG_VERSION 21.2.2
+ENV ERLANG_VERSION 22.0.1
 RUN asdf install erlang ${ERLANG_VERSION} \
  && asdf global erlang ${ERLANG_VERSION}
 
 # install elixir
-ENV ELIXIR_VERSION 1.7.4
+ENV ELIXIR_VERSION 1.8.2
 RUN asdf install elixir ${ELIXIR_VERSION} \
  && asdf global elixir ${ELIXIR_VERSION}
 
